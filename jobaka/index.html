@@ -33,6 +33,9 @@
 
     </div>
 
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+
+
     <div class="row">
         <form class="col-md-6 col-xs-12">
             <div class="form-group">
@@ -74,6 +77,24 @@
 <!-- custome javascript created by Jaimin MosLake (fb/dallu7020) -->
 <script src="js/script.js"></script>
 
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '319966441509823',
+            xfbml      : true,
+            version    : 'v2.1'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <script>
     window.onload = function(){
@@ -161,55 +182,16 @@
 
 </script>
 
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '319966441509823',
-            xfbml      : true,
-            version    : 'v2.1'
-        });
-
-        // ADD ADDITIONAL FACEBOOK CODE HERE
 
 
-        function onLogin(response) {
-            if (response.status == 'connected') {
-                FB.api('/me?fields=first_name', function(data) {
-                    var welcomeBlock = document.getElementById('fb-welcome');
-                    welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
-                });
-            }
-        }
-
-        FB.getLoginStatus(function(response) {
-            // Check login status on load, and if the user is
-            // already logged in, go directly to the welcome message.
-            if (response.status == 'connected') {
-                onLogin(response);
-            } else {
-                // Otherwise, show Login dialog first.
-                FB.login(function(response) {
-                    onLogin(response);
-                }, {scope: 'user_friends, email'});
-            }
-        });
-
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
-
-
-
-</script>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=319966441509823&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>
