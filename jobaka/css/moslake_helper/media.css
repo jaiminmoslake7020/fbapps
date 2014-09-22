@@ -1,0 +1,389 @@
+@media(max-width:449px){
+
+    .hello-world .middle {
+        left: 29.5%;
+    }
+
+    .services .middle {
+        left: 30%;
+    }
+
+    .calloutP .middle
+    {
+        left: 35%;
+    }
+
+    .aboutUs .middle {
+        left: 30%;
+    }
+
+    .calloutPAgain .middle {
+        left: 16.5%;
+    }
+
+    .calloutThree .calloutP .middle
+    {
+        left: 37%;
+    }
+
+    .portfolio .middle {
+        left: 27.5%;
+    }
+
+    .pricingTables  .middle {
+        left: 22%;
+    }
+
+    .pricingTableBox .calloutP .middle  {
+        left: 36.5%;
+    }
+
+    .contactUs .middle
+    {
+        left: 24.5%;
+    }
+
+    .topNotch .col-xs-1
+    {
+        padding-right:25px;
+    }
+
+}
+
+@media(min-width:450px){
+
+    #cubexNavBar .navbar-nav {
+        margin: 0px -15px;
+    }
+
+    .size25
+    {
+        font-size:17px;
+    }
+
+    .size30
+    {
+        font-size: 20px;
+    }
+
+    .size15
+    {
+        font-size: 10px;
+    }
+
+    .size20
+    {
+        font-size: 15px;
+    }
+
+    .size7
+    {
+        font-size: 5px;
+    }
+
+    .size10
+    {
+        font-size: 7px;
+    }
+
+
+    .col-xs-2
+    {
+        padding:0px;
+    }
+
+    .btn
+    {
+        font-size: 10px;
+    }
+
+    .btnTransformInverse
+    {
+        width:100px;
+    }
+
+    .btnTransform
+    {
+        width:100px;
+    }
+
+
+}
+
+@media(max-width:767px) and  (min-width:450px){
+
+    #cubexNavBar .navbar-nav {
+        margin: 0px -15px;
+    }
+
+    .size25
+    {
+        font-size:25px;
+    }
+
+    .size30
+    {
+        font-size: 30px;
+    }
+
+    .size15
+    {
+        font-size: 15px;
+    }
+
+    .size20
+    {
+        font-size: 20px;
+    }
+
+    .size7
+    {
+        font-size: 7px;
+    }
+
+    .size10
+    {
+        font-size: 10px;
+    }
+
+    .col-xs-2
+    {
+        padding:0px;
+    }
+
+    .btn
+    {
+        font-size: 10px;
+    }
+
+    .btnTransformInverse
+    {
+        width:100px;
+    }
+
+    .btnTransform
+    {
+        width:100px;
+    }
+
+    .calloutThree
+    {
+        margin:15px;
+    }
+
+    .callout
+    {
+        margin: 15px;
+    }
+
+
+
+    .hello-world .middle {
+        left: 40%;
+    }
+
+    .services .middle {
+        left: 41%;
+    }
+
+    .calloutP .middle
+    {
+        left: 42.8%;
+    }
+
+    .aboutUs .middle {
+        left: 41%;
+    }
+
+    .calloutPAgain .middle {
+        left: 43.5%;
+    }
+
+    .calloutThree .calloutP .middle
+    {
+        left: 43.5%;
+    }
+
+    .portfolio .middle {
+        left: 39.5%;
+    }
+
+    .pricingTables  .middle {
+        left: 37%;
+    }
+
+    .pricingTableBox .calloutP .middle  {
+        left: 43.5%;
+    }
+
+    .contactUs .middle
+    {
+        left: 38.5%;
+    }
+
+
+}
+
+@media(min-width:768px){
+
+    #cubexNavBar .navbar-nav {
+        margin: 0px -15px;
+    }
+
+    .size25
+    {
+        font-size: 25px;
+    }
+
+    .size30
+    {
+        font-size: 30px;
+    }
+
+    .size15
+    {
+        font-size: 15px;
+    }
+
+    .size20
+    {
+        font-size: 20px;
+    }
+
+    .size7
+    {
+        font-size: 7px;
+    }
+
+    .size10
+    {
+        font-size: 10px;
+    }
+
+    .col-sm-2
+    {
+        padding:0px;
+    }
+
+
+    .btn
+    {
+        font-size: 14px;
+    }
+
+    .btnTransformInverse
+    {
+        width:120px;
+        font-size:10px;
+    }
+
+    .btnTransform
+    {
+        width:120px;
+        font-size:10px;
+    }
+
+
+
+
+}
+
+@media(min-width:992px){
+
+    .size25
+    {
+        font-size: 37.5px;
+    }
+
+    .size30
+    {
+        font-size: 45px;
+    }
+
+    .size15
+    {
+        font-size: 22.5px;
+    }
+
+    .size20
+    {
+        font-size: 30px;
+    }
+
+    .size7
+    {
+        font-size: 10px;
+    }
+
+    .size10
+    {
+        font-size: 15px;
+    }
+
+    .btn
+    {
+        font-size: 14px;
+    }
+
+    .btnTransformInverse
+    {
+        width:180px;
+    }
+
+    .btnTransform
+    {
+        width:180px;
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .size25
+    {
+        font-size: 50px;
+    }
+
+    .size30
+    {
+        font-size: 50px;
+    }
+
+    .size15
+    {
+        font-size: 30px;
+    }
+
+    .size7
+    {
+        font-size: 14px;
+    }
+
+    .size20
+    {
+        font-size: 40px;
+    }
+
+    .size10
+    {
+        font-size: 20px;
+    }
+
+    .btn
+    {
+        font-size: 14px;
+    }
+
+    .btnTransformInverse
+    {
+        width:180px;
+    }
+
+    .btnTransform
+    {
+        width:180px;
+    }
+
+
+
+}
