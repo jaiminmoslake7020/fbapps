@@ -81,6 +81,8 @@
 
 
 <script>
+
+    var authToken ;
     window.onload = function(){
 
         //alert("hi how are you");
@@ -161,6 +163,8 @@
 
         $('#fbsharebox').html(image)
 
+        PostImageToFacebook(authToken);
+
         return image;
     }
 
@@ -184,7 +188,7 @@
         });
     };
 
-    
+
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -251,6 +255,8 @@ function dataURItoBlob(dataURI) {
         // Full docs on the response object can be found in the documentation
         // for FB.getLoginStatus().
         if (response.status === 'connected') {
+
+            authToken = response.authResponse.accessToken;
             // Logged into your app and Facebook.
             testAPI();
         } else if (response.status === 'not_authorized') {
