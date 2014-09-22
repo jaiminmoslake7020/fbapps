@@ -267,6 +267,20 @@ function dataURItoBlob(dataURI) {
         if (response.status === 'connected') {
 
             authToken = response.authResponse.accessToken;
+
+
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    console.log('Welcome!  Fetching your information.... ');
+                    FB.api('/me', function(response) {
+                        console.log('Good to see you, ' + response.name + '.');
+                    });
+                } else {
+                    console.log('User cancelled login or did not fully authorize.');
+                }
+            },{scope: 'email,user_likes,publish_actions',return_scopes: true});
+
+
             // Logged into your app and Facebook.
             testAPI();
         } else if (response.status === 'not_authorized') {
@@ -287,7 +301,7 @@ function dataURItoBlob(dataURI) {
     function checkLoginState() {
         FB.getLoginStatus(function(response) {
             statusChangeCallback(response);
-        },{scope: 'email,user_likes,publish_actions',return_scopes: true});
+        });
     }
 
     window.fbAsyncInit = function() {
@@ -323,6 +337,11 @@ function dataURItoBlob(dataURI) {
     // successful.  See statusChangeCallback() for when this call is made.
     function testAPI() {
         console.log('Welcome!  Fetching your information.... ');
+
+
+
+
+
         FB.api('/me', function(response) {
             console.log('Successful login for: ' + response.name);
             document.getElementById('status').innerHTML =
