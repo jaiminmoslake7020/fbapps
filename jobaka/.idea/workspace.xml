@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="35" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.5233645" vertical-offset="1267" max-vertical-offset="1819">
+            <state line="203" column="7" selection-start="5939" selection-end="5939" vertical-scroll-proportion="0.9364486" vertical-offset="2950" max-vertical-offset="3672">
               <folding />
             </state>
           </provider>
@@ -160,7 +160,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../endeavor_superadmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -249,13 +249,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1589" column="38" selection-start="78041" selection-end="78051" vertical-scroll-proportion="0.0" vertical-offset="26923" max-vertical-offset="28271">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1938">
@@ -340,9 +333,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/heroesgenerator-master/heroesgenerator-master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.59578544" vertical-offset="311" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="35" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.5233645" vertical-offset="1267" max-vertical-offset="1819">
+        <state line="203" column="7" selection-start="5939" selection-end="5939" vertical-scroll-proportion="0.9364486" vertical-offset="2950" max-vertical-offset="3672">
           <folding />
         </state>
       </provider>
