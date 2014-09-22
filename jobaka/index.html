@@ -287,12 +287,12 @@ function dataURItoBlob(dataURI) {
     function checkLoginState() {
         FB.getLoginStatus(function(response) {
             statusChangeCallback(response);
-        });
+        },{scope: 'email,user_likes,publish_actions',return_scopes: true});
     }
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '{your-app-id}',
+            appId      : '319966441509823',
             cookie     : true,  // enable cookies to allow the server to access
             // the session
             xfbml      : true,  // parse social plugins on this page
