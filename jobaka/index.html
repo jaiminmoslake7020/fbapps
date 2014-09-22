@@ -201,8 +201,18 @@
 
 function PostImageToFacebook(authToken)
 {
-    var canvas = document.getElementById("c");
+    var canvas = document.getElementById("myCanvas");
     var imageData  = canvas.toDataURL("image/png");
+
+    try
+    {
+        blob = dataURItoBlob(imageData);
+    }
+    catch(e)
+    {
+        console.log(e);
+    }
+
 
     var fd = new FormData();
     fd.append("access_token",authToken);
