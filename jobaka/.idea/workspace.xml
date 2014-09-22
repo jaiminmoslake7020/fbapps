@@ -26,10 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="9" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.9364486" vertical-offset="1131" max-vertical-offset="2006">
-              <folding>
-                <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="35" column="114" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.57570094" vertical-offset="287" max-vertical-offset="3383">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -295,9 +293,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="777" column="52" selection-start="42660" selection-end="42672" vertical-scroll-proportion="0.0" vertical-offset="12785" max-vertical-offset="28441">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -346,10 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="9" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.9364486" vertical-offset="1131" max-vertical-offset="2006">
-          <folding>
-            <element signature="tag#script#9;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+        <state line="35" column="114" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.57570094" vertical-offset="287" max-vertical-offset="3383">
+          <folding />
         </state>
       </provider>
     </entry>
