@@ -33,13 +33,10 @@
 
     </div>
 
-    <div class="fb-share-button" data-href="http://jaiminmoslake7020.github.io/fbapps/jobaka/index.html#fbsharebox"></div>
-
-
     <div class="row">
         <form class="col-md-6 col-xs-12">
             <div class="form-group">
-                <label for="exampleInputEmail1">Add some thing awesome "Jo Baka" text...!!!</label>
+                <label for="exampleInputEmail1" class="white">Add some thing awesome "Jo Baka" text...!!!</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="have fun...!!">
             </div>
         </form>
@@ -53,12 +50,16 @@
     </canvas>
 
 
+    <div class="break30"></div>
     <button class="btn btn-success" onclick="convertCanvasToImage()" >Convert</button>
-
-    <span id="test"></span>
-    <span id="status"></span>
-
     <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+
+
+    <div class="break30"></div>
+    <span id="test" style="visibility: hidden;"></span>
+    <div class="break30"></div>
+    <span id="status"  style="visibility: hidden;"></span>
+
 
 
 </div>
@@ -95,7 +96,7 @@
 
             context.drawImage(imageObj, 10, 10);
             context.font = "30pt Calibri";
-            context.fillText("Jaimin MosLake Is Awesome", 15, 480);
+            context.fillText("Jaimin MosLake \t Is Awesome", 15, 480);
         };
         imageObj.src = "images/image.png";
 
@@ -103,6 +104,8 @@
     };
 
     var mark = 50;
+    var markStart = 50  ;
+
     $('#exampleInputEmail1').keyup(function(){
 
         var value = $(this).val();
@@ -110,18 +113,44 @@
         $('#test').html(value);
         $('#test').css("font-size",(mark*1.34)+"px");
 
-        console.log($('#test').width());
+        console.log(mark+"===================="+$('#test').width());
 
         if($('#test').width() >= 400)
         {
-            mark = mark-10;
+            mark = mark-15;
         }
         else
         {
-            mark = 50;
+            if(mark >= 50)
+            {
+
+            }
+            else
+            {
+                while($('#test').width() < 400)
+                {
+                    if(mark >= 50)
+                    {
+                        break;
+                    }
+                    else
+                    {
+
+                        $('#test').css("font-size",(mark*1.34)+"px");
+
+                        if($('#test').width() < 400)
+                        {
+                            mark = mark+5;
+                        }
+
+                    }
+
+                }
+            }
+
         }
 
-
+        console.log(mark+"===================="+$('#test').width());
 
 
 
