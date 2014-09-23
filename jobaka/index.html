@@ -247,7 +247,7 @@ function PostImageToFacebook(authToken)
     var fd = new FormData();
     fd.append("access_token",authToken);
     fd.append("source", blob);
-    fd.append("message","Photo Text");
+    fd.append("message","#http://jaiminmoslake7020.github.io/fbapps/jobaka/");
     try{
         $.ajax({
             url:"https://graph.facebook.com/me/photos?access_token=" + authToken,
