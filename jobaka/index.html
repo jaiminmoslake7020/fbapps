@@ -135,7 +135,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">Please Login To Continue</h4>
+                <h4 class="modal-title">Post it to your FB Wall</h4>
             </div>
             <div class="modal-body">
 
@@ -144,6 +144,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" onclick="PostImageToFacebook()">Close</button>
+
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -168,6 +170,29 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="" style="display: none">
+    <div id="successAlert" class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <p>
+            <strong><i class="fa fa-check"></i>&nbsp;Success : </strong> You have been succefully Login.
+        </p>
+    </div>
+
+    <div id="dangerAlert" class="alert alert-danger fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <p>
+            <strong><i class="fa fa-warning"></i>&nbsp;Success : </strong> Something Gone wrong.Please try againe later.
+        </p>
+    </div>
+
+    <div id="infoAlert" class="alert alert-info fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <p>
+            <strong><i class="fa fa-info"></i>&nbsp;Success : </strong> Please Log In to our app and facebook.
+        </p>
+    </div>
+</div>
+
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -190,11 +215,20 @@
 
 <div id="fb-root"></div>
 <script>
+var authToken;
 
 var fbLoginCount = 0;
 
-function PostImageToFacebook(authToken)
+function PostImageToFacebook()
 {
+
+    if(authToken == null || authToken == "")
+    {
+        $('#shareBox .modal-body').html($('#dangerAlert'));
+        return false;
+    }
+
+
     var canvas = document.getElementById("myCanvas");
     var imageData  = canvas.toDataURL("image/png");
 
@@ -261,7 +295,8 @@ function dataURItoBlob(dataURI) {
             // Logged into your app and Facebook.
 
             authToken = response.authResponse.accessToken;
-            fbLoginCount++;
+
+            console.log(authToken);
 
             FB.login(function(response) {
                 if (response.authResponse) {
@@ -278,15 +313,29 @@ function dataURItoBlob(dataURI) {
             testAPI();
 
 
+            $('#facebookLogin .modal-body').html($('#successAlert'));
+
+            setTimeout(function(){
+
+                $('#facebookLogin').modal('hide');
+                $('#shareBox').modal('show');
+
+            },2000)
+
+
+
         } else if (response.status === 'not_authorized') {
             // The person is logged into Facebook, but not your app.
-            document.getElementById('status').innerHTML = 'Please log ' +
-                    'into this app.';
+
+            $('#facebookLogin .modal-body').html($('#infoAlert'));
+
         } else {
             // The person is not logged into Facebook, so we're not sure if
             // they are logged into this app or not.
-            document.getElementById('status').innerHTML = 'Please log ' +
-                    'into Facebook.';
+          //  document.getElementById('status').innerHTML = 'Please log ' +
+            //        'into Facebook.';
+
+            $('#facebookLogin .modal-body').html($('#infoAlert'));
         }
     }
 
