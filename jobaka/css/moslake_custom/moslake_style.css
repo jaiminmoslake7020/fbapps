@@ -446,7 +446,6 @@ height: 50px;
 {
     background: #F9BF3B;
     border: 0px solid red;
-    z-index: 1000000000;
 }
 
 #logoNavBar .navbar-brand

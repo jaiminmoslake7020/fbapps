@@ -139,7 +139,16 @@ function convertCanvasToImage() {
 
     $('#fbsharebox').html(image)
 
-    $('#facebookLogin').modal('show');
+
+    if(authToken != null && authToken != "")
+    {
+        $('#shareBox').modal('show');
+    }
+    else
+    {
+        $('#facebookLogin').modal('show');
+    }
+
 
     ///PostImageToFacebook(authToken);
 

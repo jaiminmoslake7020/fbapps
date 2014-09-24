@@ -256,7 +256,7 @@ function PostImageToFacebook()
             success:function(data){
                 console.log("success " + data);
 
-                $('#dangerAlert p span').html("Successfully Posted to FB.");
+                $('#successAlert p span').html("Successfully Posted to FB.");
                 $('#shareBox .modal-body').html($('#successAlert'));
             },
             error:function(shr,status,data){
