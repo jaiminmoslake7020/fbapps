@@ -46,3 +46,14 @@
 {
     cursor: pointer;
 }
+
+.underline
+{
+    text-decoration: underline;
+}
+
+.underlineNoneImp
+{
+    text-decoration: none !important;
+}
+

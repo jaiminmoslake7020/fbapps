@@ -23,25 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="-3.7307692" vertical-offset="4136" max-vertical-offset="6647">
+            <state line="119" column="88" selection-start="5172" selection-end="5172" vertical-scroll-proportion="0.6091954" vertical-offset="1705" max-vertical-offset="6256">
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="privacypolicy.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/privacypolicy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16283526" vertical-offset="0" max-vertical-offset="2771">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,7 +39,7 @@
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1938">
+            <state line="141" column="35" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2601">
               <folding />
             </state>
           </provider>
@@ -59,7 +48,7 @@
       <file leaf-file-name="boxmodel.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/moslake_helper/boxmodel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="0" selection-end="34062" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="901">
+            <state line="50" column="1" selection-start="34076" selection-end="34076" vertical-scroll-proportion="0.0" vertical-offset="472" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -84,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/frogonline template_4_widgets_black.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/home_black.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/portfolio.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/portfolio_black.html" />
@@ -95,11 +83,12 @@
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/css/moslake_custom/moslake_style.css" />
         <option value="$PROJECT_DIR$/frogonline template_4_Header_Dark_Fluid_Centre_Nav.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/frogonline template_4_Internal_Header_light_Fluid_Centre_Nav.html" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/moslake_custom/moslake_style_white.css" />
         <option value="$PROJECT_DIR$/css/moslake_custom/moslake_style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/moslake_helper/boxmodel.css" />
         <option value="$PROJECT_DIR$/privacypolicy.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -169,13 +158,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobaka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moslake_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobaka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="moslake_custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FirstTheme" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -305,8 +330,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="777" column="52" selection-start="42660" selection-end="42672" vertical-scroll-proportion="0.0" vertical-offset="12785" max-vertical-offset="28441">
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -326,13 +352,6 @@
         <state line="207" column="29" selection-start="3913" selection-end="3922" vertical-scroll-proportion="-0.7083333" vertical-offset="4131" max-vertical-offset="27863" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/moslake_helper/boxmodel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="0" selection-end="34062" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/moslake_custom/moslake_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1550" column="0" selection-start="25714" selection-end="25759" vertical-scroll-proportion="0.0" vertical-offset="25616" max-vertical-offset="26503">
@@ -345,29 +364,36 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.59578544" vertical-offset="311" max-vertical-offset="833" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/privacypolicy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="40" selection-start="10305" selection-end="10305" vertical-scroll-proportion="0.3007663" vertical-offset="2036" max-vertical-offset="2771">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/moslake_helper/boxmodel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="1" selection-start="34076" selection-end="34076" vertical-scroll-proportion="0.0" vertical-offset="472" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1061" max-vertical-offset="1938">
+        <state line="141" column="35" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2601">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="-3.7307692" vertical-offset="4136" max-vertical-offset="6647">
+        <state line="119" column="88" selection-start="5172" selection-end="5172" vertical-scroll-proportion="0.6091954" vertical-offset="1705" max-vertical-offset="6256">
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/privacypolicy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16283526" vertical-offset="0" max-vertical-offset="2771">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

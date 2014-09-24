@@ -4,105 +4,144 @@
 
 $('.dropdown-toggle').dropdownHover();
 
-var setScreenHeight = $(window).height();
 
-if(setScreenHeight > 767)
-{
-    setScreenHeight = setScreenHeight-$('#header').height();
-    setScreenHeight = setScreenHeight-$('#cubexNavBar').height();
-}
+$('a[data-toggle="tooltip"]').tooltip();
 
-$('.heightScreen').css('height',setScreenHeight+'px');
+$('.privacyPolicy').click(function(e){
 
-$('#logoNavBar').find('ul.nav li a').click(function(e){
+e.preventDefault();
 
-     e.preventDefault();
-    //  alert('hi how are you');
+    $.ajax({
+        url : "privacypolicy.html",
+        type : "GET",
+        dataType : "HTML",
+        success : function(response){
 
-    $(this).parents('ul.nav').children('li').removeClass('active');
-    $(this).parent('li').addClass('active');
+            $('#privacyModal').find('.modal-body').html(response);
+            $('#privacyModal').modal('show');
 
-    var href = $(this).attr('data-href') ;
-    var top = $(this).attr('data-top') ;
-    $(document).scrollTo( href , 1000, {offset: function() { return {top:-top, left:-5}; }});
-
+        },
+        error : function(){
+            alert("some thing wrong happende.");
+        }
+    });
 
 });
 
 
-count = 0 ;
-$('#logoNavBar').waypoint(function(direction) {
- //  alert('Top of thing hit top of viewport.'+window.scrollY);
+
+var authToken ;
+window.onload = function(){
+
+    //alert("hi how are you");
+
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var imageObj = new Image();
+    imageObj.onload = function(){
+
+        context.drawImage(imageObj, 10, 10);
+        context.font = "30pt Calibri";
+        context.fillText("Jaimin MosLake \t Is Awesome", 15, 480);
+    };
+    imageObj.src = "images/image.png";
 
 
+};
 
-    console.log('Top of thing hit top of viewport.'+window.scrollY);
+var mark = 50;
+var markStart = 50  ;
 
-    if(count > 1 )
+$('#exampleInputEmail1').keyup(function(){
+
+    var value = $(this).val();
+
+    $('#test').html(value);
+    $('#test').css("font-size",(mark*1.34)+"px");
+
+    console.log(mark+"===================="+$('#test').width());
+
+    if($('#test').width() >= 400)
     {
-        if( $('#logoNavBar').hasClass('myCustomFixed'))
+        mark = mark-15;
+    }
+    else
+    {
+        if(mark >= 50)
         {
-            console.log('removeClass.'+window.scrollY);
-            $('#logoNavBar').removeClass('myCustomFixed');
+
         }
         else
         {
-            console.log('addClass.'+window.scrollY);
-            $('#logoNavBar').addClass('myCustomFixed');
+            while($('#test').width() < 400)
+            {
+                if(mark >= 50)
+                {
+                    break;
+                }
+                else
+                {
+
+                    $('#test').css("font-size",(mark*1.34)+"px");
+
+                    if($('#test').width() < 400)
+                    {
+                        mark = mark+5;
+                    }
+
+                }
+
+            }
         }
+
     }
 
-    count++;
+    console.log(mark+"===================="+$('#test').width());
 
 
 
-});
+    var dynamicValue = 500-parseInt($('#test').width());
+    dynamicValue = dynamicValue/2 ;
 
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var imageObj = new Image();
+    imageObj.onload = function(){
 
+        context.drawImage(imageObj, 10, 10);
+        context.font = mark+"pt Calibri";
+        context.fillText(value, dynamicValue, 480);
 
-//$('.mosLakeCarousal').find('img').click(function(){
-//
-//    if($(this).parent('a').hasClass('caroselIcon')  ||  $(this).parent('a').hasClass('caroselIcon2'))
-//    {
-//        // alert('hi');
-//       // return false;
-//    }
-//    else
-//    {
-//        var img = $(this).clone();
-//
-//        $('#imageModal').find('.modal-body').find('.putImage').html(img);
-//        $('#imageModal').modal('show');
-//
-//    }
-//
-//});
-
-
-$('.portFolioBox').click(function(){
-
-        var img = $(this).clone();
-
-        img.addClass('adderImageClass');
-
-        $('#imageModal').find('.modal-body').find('.putImage').html(img);
-        $('#imageModal').modal('show');
+    };
+    imageObj.src = "images/image.png";
 
 
 });
 
 
 
-$('.portFolioBox1').click(function(){
 
-        var img = $(this).clone();
+// Converts canvas to an image
+function convertCanvasToImage() {
+    var canvas = document.getElementById("myCanvas");
+    var image = new Image();
+    image.src = canvas.toDataURL("image/png");
+    var imageData  = canvas.toDataURL("image/png");
 
-        img.addClass('adderImageClass');
+    try
+    {
+        blob = dataURItoBlob(imageData);
+    }
+    catch(e)
+    {
+        console.log(e);
+    }
 
-        $('#imageModal').find('.modal-body').find('.putImage').html(img);
-        $('#imageModal').modal('show');
+    $('#fbsharebox').html(image)
 
+    $('#facebookLogin').modal('show');
 
-});
+    ///PostImageToFacebook(authToken);
 
-
+    return image;
+}
