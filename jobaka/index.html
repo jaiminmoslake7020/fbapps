@@ -192,15 +192,6 @@
 
 var fbLoginCount = 0;
 
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '319966441509823',
-            xfbml      : true,
-            version    : 'v2.1'
-        });
-    };
-
-
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -281,8 +272,7 @@ function dataURItoBlob(dataURI) {
             authToken = response.authResponse.accessToken;
             fbLoginCount++;
 
-           if(fbLoginCount >= 2)
-           {
+
                FB.login(function(response) {
                    if (response.authResponse) {
                        console.log('Welcome!  Fetching your information.... ');
@@ -296,7 +286,7 @@ function dataURItoBlob(dataURI) {
 
                // Logged into your app and Facebook.
                testAPI();
-           }
+
 
 
 
