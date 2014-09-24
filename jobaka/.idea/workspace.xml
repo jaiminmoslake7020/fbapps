@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="258" column="73" selection-start="10206" selection-end="10206" vertical-scroll-proportion="0.17102616" vertical-offset="4301" max-vertical-offset="7055">
+            <state line="98" column="47" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.18108653" vertical-offset="1576" max-vertical-offset="7055">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -235,7 +235,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -389,7 +389,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="73" selection-start="10206" selection-end="10206" vertical-scroll-proportion="0.17102616" vertical-offset="4301" max-vertical-offset="7055">
+        <state line="98" column="47" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.18108653" vertical-offset="1576" max-vertical-offset="7055">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
