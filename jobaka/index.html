@@ -144,8 +144,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-default" onclick="PostImageToFacebook()">Close</button>
-
+                <button type="button" class="btn btn-success" onclick="PostImageToFacebook()">Post</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -174,21 +173,21 @@
     <div id="successAlert" class="alert alert-success fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <p>
-            <strong><i class="fa fa-check"></i>&nbsp;Success : </strong> You have been succefully Login.
+            <strong><i class="fa fa-check"></i>&nbsp;Success : </strong><span> You have been succefully Login.</span>
         </p>
     </div>
 
     <div id="dangerAlert" class="alert alert-danger fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <p>
-            <strong><i class="fa fa-warning"></i>&nbsp;Success : </strong> Something Gone wrong.Please try againe later.
+            <strong><i class="fa fa-warning"></i>&nbsp;Success : </strong><span> Something Gone wrong.Please try againe later.</span>
         </p>
     </div>
 
     <div id="infoAlert" class="alert alert-info fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <p>
-            <strong><i class="fa fa-info"></i>&nbsp;Success : </strong> Please Log In to our app and facebook.
+            <strong><i class="fa fa-info"></i>&nbsp;Success : </strong><span> Please Log In to our app and facebook.</span>
         </p>
     </div>
 </div>
@@ -256,9 +255,16 @@ function PostImageToFacebook()
             cache:false,
             success:function(data){
                 console.log("success " + data);
+
+                $('#dangerAlert p span').html("Successfully Posted to FB.");
+                $('#shareBox .modal-body').html($('#successAlert'));
             },
             error:function(shr,status,data){
                 console.log("error " + data + " Status " + shr.status);
+
+                $('#dangerAlert p span').html("error " + data + " Status " + shr.status);
+                $('#shareBox .modal-body').html($('#dangerAlert'));
+
             },
             complete:function(){
                 console.log("Posted to facebook");
