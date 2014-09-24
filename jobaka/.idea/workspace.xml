@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="0.19019608" vertical-offset="4136" max-vertical-offset="6647">
+            <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="-3.7307692" vertical-offset="4136" max-vertical-offset="6647">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,10 +35,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="privacypolicy.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/privacypolicy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="6" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16283526" vertical-offset="0" max-vertical-offset="2771">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1938">
+            <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1938">
               <folding />
             </state>
           </provider>
@@ -72,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/frogonline template_4_widgets.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/frogonline template_4_widgets_black.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/home_black.html" />
         <option value="$PROJECT_DIR$/creatove_agency/creatove_agency/portfolio.html" />
@@ -88,6 +99,7 @@
         <option value="$PROJECT_DIR$/css/moslake_custom/moslake_style_white.css" />
         <option value="$PROJECT_DIR$/css/moslake_custom/moslake_style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/privacypolicy.html" />
       </list>
     </option>
   </component>
@@ -124,6 +136,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,13 +171,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -205,7 +218,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14090909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14318182" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -235,9 +248,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15901814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -254,13 +267,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="39" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/moslake_helper/boxmodel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="16" selection-start="0" selection-end="34062" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="901">
@@ -348,10 +354,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="0.19019608" vertical-offset="4136" max-vertical-offset="6647">
+        <state line="249" column="75" selection-start="6675" selection-end="6675" vertical-scroll-proportion="-3.7307692" vertical-offset="4136" max-vertical-offset="6647">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privacypolicy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16283526" vertical-offset="0" max-vertical-offset="2771">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
