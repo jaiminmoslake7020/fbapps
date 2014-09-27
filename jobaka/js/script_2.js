@@ -52,31 +52,35 @@ $('body').on('click','.addText',function(){
     text.fontWeight = "normal";
     text.fontStyle = "normal";
     text.top = 50;
-    text.left = 100;
+    text.left = 10;
     canvas.add(text);
     canvas.renderAll();
+
+    console.log(text);
 
 });
 
 
 $('body').on('click','.modalImgBtn',function(e){
 
-    var imgElement = $('#imagePushModal .modal-body img.selected');
-    var src = imgElement.attr('src');
 
-    fabric.Image.fromURL(src, function(oImg) {
+        var imgElement = $('#imagePushModal .modal-body img.selected');
+        var src = imgElement.attr('src');
 
-        oImg.top = 50;
-        oImg.left = 100 ;
+        fabric.Image.fromURL(src, function(oImg) {
 
-        canvas.add(oImg);
-        console.log(oImg);
-    });
+            oImg.top = 50;
+            oImg.left = 100 ;
+
+            canvas.add(oImg);
+            console.log(oImg);
+        });
+
+        canvas.renderAll();
+
+        $('#imagePushModal').modal('hide');
 
 
-    canvas.renderAll();
-
-    $('#imagePushModal').modal('hide');
 
 
 //    var canvasN = document.getElementById("c");
@@ -563,10 +567,25 @@ function returnWh()
     return returnArray;
 }
 
+function beoforeConvert()
+{
+    console.log(canvas);
+    canvas.forEachObject(function(o) {
+        o.active = false;
+        lastTeam =  o.active;
+        console.log(o);
+
+    });
+    canvas.renderAll();
+
+}
+
 
 // Converts canvas to an image
 function convertCanvasToImage() {
+
     var canvas = document.getElementById("c");
+
     var image = new Image();
     image.src = canvas.toDataURL("image/png");
     var imageData  = canvas.toDataURL("image/png");

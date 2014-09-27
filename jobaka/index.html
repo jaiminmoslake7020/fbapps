@@ -105,7 +105,7 @@
     </canvas>
 
     <div class="break30"></div>
-    <button class="btn btn-success" onclick="convertCanvasToImage()" ><i class="fa fa-share"></i>&nbsp;&nbsp;Share</button>
+    <button class="btn btn-success" onclick="beoforeConvert();convertCanvasToImage()" ><i class="fa fa-share"></i>&nbsp;&nbsp;Share</button>
     <div class="break50"></div>
 
     <div class="break10"></div>
@@ -286,6 +286,13 @@
             </div>
             <div class="modal-body">
 
+                <div class="row mb10 ml0">
+                    <div class="form-group mlm10 col-xs-12">
+                        <label for="saySomething" class="control-label ">Say Something Awesome</label>
+                        <textarea type="text" class="form-control "  placeholder="Say Something" id="saySomething" name="colorpicker"  ></textarea>
+                    </div>
+                </div>
+
                 <div id="fbsharebox" ></div>
 
             </div>
@@ -330,14 +337,14 @@
     <div id="dangerAlert" class="alert alert-danger fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <p>
-            <strong><i class="fa fa-warning"></i>&nbsp;Success : </strong><span> Something Gone wrong.Please try againe later.</span>
+            <strong><i class="fa fa-warning"></i>&nbsp;Error : </strong><span> Something Gone wrong.Please try againe later.</span>
         </p>
     </div>
 
     <div id="infoAlert" class="alert alert-info fade in" role="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         <p>
-            <strong><i class="fa fa-info"></i>&nbsp;Success : </strong><span> Please Log In to our app and facebook.</span>
+            <strong><i class="fa fa-info"></i>&nbsp;Info : </strong><span> Please Log In to our app and facebook.</span>
         </p>
     </div>
 </div>
@@ -368,7 +375,6 @@
 
 
 
-
 <div id="fb-root"></div>
 <script>
     var authToken;
@@ -380,9 +386,23 @@
 
         if(authToken == null || authToken == "")
         {
-            $('#shareBox .modal-body').html($('#dangerAlert'));
+            $('#dangerAlert p span').html("Sorry we do not have permission to post on your facebook wall. Please log in again to continue...!!!");
+            $('#shareBox .modal-body').prepend($('#dangerAlert'));
             return false;
         }
+
+
+        if($('#saySomething').val() == "")
+        {
+            console.log("here");
+            $('#dangerAlert p span').html("Sorry You have to say something...!!!");
+            $('#shareBox .modal-body').prepend($('#dangerAlert'));
+            $('#saySomething').parents('.form-group').addClass('has-error');
+            return false;
+
+        }
+
+        console.log("here passwed a");
 
 
         var canvas = document.getElementById("myCanvas");

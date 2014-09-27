@@ -26,7 +26,7 @@
       <file leaf-file-name="script_2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script_2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="0" selection-start="6109" selection-end="6109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10285">
+            <state line="569" column="23" selection-start="14559" selection-end="14573" vertical-scroll-proportion="0.0" vertical-offset="9554" max-vertical-offset="10608">
               <folding />
             </state>
           </provider>
@@ -35,11 +35,12 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="51" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.18582375" vertical-offset="498" max-vertical-offset="9724">
+            <state line="107" column="62" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.4225352" vertical-offset="1609" max-vertical-offset="8126">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,7 +49,7 @@
       <file leaf-file-name="index - Copy.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index - Copy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="410" column="0" selection-start="15429" selection-end="15429" vertical-scroll-proportion="-203.38461" vertical-offset="1223" max-vertical-offset="6715">
+            <state line="410" column="0" selection-start="15429" selection-end="15429" vertical-scroll-proportion="-174.26923" vertical-offset="1980" max-vertical-offset="6715">
               <folding>
                 <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -353,7 +354,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/script_2.js</url>
-          <line>396</line>
+          <line>400</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -378,6 +379,7 @@
             <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -444,7 +446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index - Copy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="410" column="0" selection-start="15429" selection-end="15429" vertical-scroll-proportion="-203.38461" vertical-offset="1223" max-vertical-offset="6715">
+        <state line="410" column="0" selection-start="15429" selection-end="15429" vertical-scroll-proportion="-174.26923" vertical-offset="1980" max-vertical-offset="6715">
           <folding>
             <element signature="tag#nav#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -455,18 +457,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script_2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="0" selection-start="6109" selection-end="6109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10285">
+        <state line="569" column="23" selection-start="14559" selection-end="14573" vertical-scroll-proportion="0.0" vertical-offset="9554" max-vertical-offset="10608">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="51" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.18582375" vertical-offset="498" max-vertical-offset="9724">
+        <state line="107" column="62" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.4225352" vertical-offset="1609" max-vertical-offset="8126">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
