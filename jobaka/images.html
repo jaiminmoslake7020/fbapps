@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<style>
+    .imageSelf
+    {
+        padding: 10px;
+        background-color: #ffffff;
+        border:5px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-transition: background-color 600ms;-moz-transition: background-color 600ms;-ms-transition: background-color 600ms;-o-transition: background-color 600ms;transition: background-color 600ms;
+    }
+
+    .imageSelf:hover
+    {
+        background-color: #dedfdd;
+    }
+
+    .imageSelf.selected
+    {
+        background-color: #bcbdbb;
+        border:5px solid #ff653f;
+    }
+
+</style>
+
+<div class="row">
+    <div class="col-xs-12" id="imageContainer">
+    </div>
+</div>
+
+<!--<script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js"><\/script>')</script>-->
+<script type="application/javascript">
+    $(document).ready(function(){
+
+
+          for(var i = 10; i <= 124; i++)
+            {
+                var img = $('<img>');
+                img.attr('src','images/images/'+i+'.png')
+                img.addClass('imageSelf');
+                $('#imageContainer').append(img);
+
+            }
+
+
+          $('body').on('click','.imageSelf', function(){
+
+              $('.imageSelf').removeClass('selected');
+              $(this).addClass('selected');
+
+          });
+
+
+    });
+</script>
+
+
+</body>
+</html>

@@ -13,13 +13,11 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- fontawesome -->
     <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/pick-a-color-master/css/pick-a-color-1.2.3.min.css">
     <!-- Custom css -->
     <link href="css/moslake_custom/moslake_style.css" rel="stylesheet">
     <link href="css/moslake_helper/boxmodel.css" rel="stylesheet">
     <link href="css/moslake_helper/font.css" rel="stylesheet">
     <link href="css/moslake_helper/media.css" rel="stylesheet">
-    <link href="vendor/jqueryui/jquery-ui-1.10.0.custom.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,10 +29,6 @@
 <body data-spy="scroll" data-target="#logoNavBar" >
 
 <div class="break30"></div>
-
-<div class="container">
-    <p class="white text-right">Version : 28-09-2014 03:50 am</p>
-</div>
 
 <nav class="navbar navbar-default" role="navigation" id="logoNavBar" >
     <div class="container">
@@ -61,56 +55,39 @@
             </ul>
         </div>
 
-
         <!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="break30"></div>
+
+
+
 <div class="container">
 
-    <div class="break10"></div>
+
+    <div class="break100"></div>
+
     <div id="alertBoxContainer"></div>
 
-    <div class="break30"></div>
-       <div id="mainController">
-           <div class="panel panel-primary">
-               <div class="panel-heading">
-                   <h3 class="panel-title">Main Controller</h3>
-               </div>
-               <div class="panel-body">
-                   <div class="row ml15 mb10">
-                       <div class="col-xs-12">
-                           <div class="btn-group mlm10">
-                               <button type="button" class="btn btn-default addText" data-action="bold" data-toggle="tooltip" data-placement="bottom"  data-title="Add Text"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Text</button>
-                               <button type="button" class="btn btn-default addImg" data-action="italic" data-toggle="tooltip" data-placement="bottom"  data-title="Add Image"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Image</button>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row ml15  mb10">
-                       <div class="col-xs-12 ">
-                           <div class="form-group mlm10">
-                               <label for="colorPickerMain" class="control-label">Select Font Color</label>
-                               <input type="text" value="#F5F5F5" id="colorPickerMain" name="colorpicker" class="pick-a-color form-control" />
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-    <div class="break30"></div>
+    <div class="row">
+        <form class="col-md-6 col-xs-12">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="white">Add some thing awesome "Jo Baka" text...!!!</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="have fun...!!">
+            </div>
+        </form>
+    </div>
 
-    <canvas id="c" width="500" height="500" style="">
+    <canvas id="myCanvas" width="510" height="510" style="">
         Your browser does not support the HTML5 canvas tag.
     </canvas>
 
     <div class="break30"></div>
-    <button class="btn btn-success" onclick="convertCanvasToImage()" ><i class="fa fa-share"></i>&nbsp;&nbsp;Share</button>
-    <div class="break50"></div>
+    <button class="btn btn-success" onclick="convertCanvasToImage()" >Convert</button>
 
-    <div class="break10"></div>
+    <div class="break30"></div>
     <span id="test" style="visibility: hidden;"></span>
-    <div class="break10"></div>
+    <div class="break30"></div>
     <span id="status"  style="visibility: hidden;"></span>
 
 </div>
@@ -131,126 +108,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-<div id="textController">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title">Text Controller (Draggable)</h3>
-        </div>
-        <div class="panel-body">
-            <div class="row mo mb10">
-                <div class="col-xs-12">
-                    <div class="form-group">
-                        <label for="fontFamilyDropDown" class="col-sm-12 control-label">Select Font</label>
-                        <div class="col-sm-12">
-                            <select id="fontFamilyDropDown" class="form-control" name="fontFamily">
-                                <option value="">MyriadPro</option>
-                                <option value="">Lato</option>
-                                <option value="" >Andale Mono</option>
-                                <option value="" >Arial</option>
-                                <option value="" >Arial Bold</option>
-                                <option value="" >Arial Italic</option>
-                                <option value="" >Arial Bold Italic</option>
-                                <option value="" >Arial Black</option>
-                                <option value="" >Comic Sans MS</option>
-                                <option value="" >Comic Sans MS Bold</option>
-                                <option value="" >Courier New</option>
-                                <option value="" >Georgia</option>
-                                <option value="" >Impact</option>
-                                <option value="" >Lucida Console</option>
-                                <option value="" >Lucida Sans Unicode</option>
-                                <option value="" >Marlett</option>
-                                <option value="" >Minion Web</option>
-                                <option value="" >Symbol</option>
-                                <option value="" >Times New Roman</option>
-                                <option value="" >Tahoma</option>
-                                <option value="" >Trebuchet MS</option>
-                                <option value="" >Verdana</option>
-                                <option value="" >Verdana Bold</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row m10">
-                <div class="col-xs-12 ">
-                    <div class="form-group mlm10">
-                        <label for="colorPicker" class="control-label">Select Font Color</label>
-                        <input type="text" value="#000000" id="colorPicker" name="colorpicker" class="pick-a-color form-control" />
-                    </div>
-                </div>
-            </div>
-            <div class="row m10">
-                <div class="col-xs-12 ">
-                    <div class="form-group mlm10">
-                        <label for="sizePicker" class="control-label">Select Font Size</label>
-                        <select id="sizePicker" class="form-control" name="size">
-                            <option value="8">8</option>
-                            <option value="8">9</option>
-                            <option value="8">10</option>
-                            <option value="8">11</option>
-                            <option value="8">12</option>
-                            <option value="8">14</option>
-                            <option value="8">16</option>
-                            <option value="8">18</option>
-                            <option value="8">20</option>
-                            <option value="8">22</option>
-                            <option value="8">24</option>
-                            <option value="8">26</option>
-                            <option value="8">28</option>
-                            <option value="8">30</option>
-                            <option value="8">34</option>
-                            <option value="8">38</option>
-                            <option value="8">42</option>
-                            <option value="8">46</option>
-                            <option value="8">50</option>
-                            <option value="8">58</option>
-                            <option value="8">66</option>
-                            <option value="8">74</option>
-                            <option value="8">82</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="row m10">
-                <div class="col-xs-12">
-                    <div class="btn-group mlm10">
-                        <button type="button" class="btn btn-default addEffect" data-action="bold" data-toggle="tooltip" data-placement="bottom"  data-title="Make Text Bold"><i class="fa fa-bold"></i></button>
-                        <button type="button" class="btn btn-default addEffect" data-action="italic" data-toggle="tooltip" data-placement="bottom"  data-title="Make Text Italic"><i class="fa fa-italic"></i></button>
-                        <button type="button" class="btn btn-default addEffect" data-action="underline" data-toggle="tooltip" data-placement="bottom"  data-title="Make Text Bold"><i class="fa fa-underline"></i></button>
-                        <button type="button" class="btn btn-default addEffect" data-action="strikethrough" data-toggle="tooltip" data-placement="bottom"  data-title="Make Text Bold"><i class="fa fa-strikethrough"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="row m0">
-                <div class="col-xs-12">
-                    <button id="textDone" class="btn btn-primary"><i class="fa fa-ok"></i> Done</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="imagePushModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">Please Choose Image</h4>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success modalImgBtn"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Image</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
 
 
 <div class="modal fade" id="facebookLogin">
@@ -344,14 +201,9 @@
 
 
 
-
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js"><\/script>')</script>
-
-<script src="vendor/jqueryui/jquery-ui-1.10.0.custom.min.js"></script>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="vendor/scrollto/jquery.scrollTo.min.js"></script>
 <script src="vendor/waypoints/waypoints.min.js"></script>
@@ -359,87 +211,85 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>
-<script src="vendor/fabric/fabric.js"></script>
-<script src="vendor/pick-a-color-master/js/tinycolor-0.9.15.min.js"></script>
-<script src="vendor/pick-a-color-master/js/pick-a-color-1.2.3.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 <!-- custome javascript created by Jaimin MosLake (fb/dallu7020) -->
-<script src="js/script_2.js"></script>
+<script src="js/script.js"></script>
 
 
 
 
 <div id="fb-root"></div>
 <script>
-    var authToken;
+var authToken;
 
-    var fbLoginCount = 0;
+var fbLoginCount = 0;
 
-    function PostImageToFacebook()
+function PostImageToFacebook()
+{
+
+    if(authToken == null || authToken == "")
     {
-
-        if(authToken == null || authToken == "")
-        {
-            $('#shareBox .modal-body').html($('#dangerAlert'));
-            return false;
-        }
-
-
-        var canvas = document.getElementById("myCanvas");
-        var imageData  = canvas.toDataURL("image/png");
-
-        try
-        {
-            blob = dataURItoBlob(imageData);
-        }
-        catch(e)
-        {
-            console.log(e);
-        }
-
-
-        var fd = new FormData();
-        fd.append("access_token",authToken);
-        fd.append("source", blob);
-        fd.append("message","#http://jaiminmoslake7020.github.io/fbapps/jobaka/");
-        try{
-            $.ajax({
-                url:"https://graph.facebook.com/me/photos?access_token=" + authToken,
-                type:"POST",
-                data:fd,
-                processData:false,
-                contentType:false,
-                cache:false,
-                success:function(data){
-                    console.log("success " + data);
-
-                    $('#successAlert p span').html("Successfully Posted to FB.");
-                    $('#shareBox .modal-body').html($('#successAlert'));
-                },
-                error:function(shr,status,data){
-                    console.log("error " + data + " Status " + shr.status);
-
-                    $('#dangerAlert p span').html("error " + data + " Status " + shr.status);
-                    $('#shareBox .modal-body').html($('#dangerAlert'));
-
-                },
-                complete:function(){
-                    console.log("Posted to facebook");
-                }
-            });
-
-        }catch(e){console.log(e);}
+        $('#shareBox .modal-body').html($('#dangerAlert'));
+        return false;
     }
 
-    function dataURItoBlob(dataURI) {
-        var byteString = atob(dataURI.split(',')[1]);
-        var ab = new ArrayBuffer(byteString.length);
-        var ia = new Uint8Array(ab);
-        for (var i = 0; i < byteString.length; i++) {
-            ia[i] = byteString.charCodeAt(i);
-        }
-        return new Blob([ab], { type: 'image/png' });
+
+    var canvas = document.getElementById("myCanvas");
+    var imageData  = canvas.toDataURL("image/png");
+
+    try
+    {
+        blob = dataURItoBlob(imageData);
     }
+    catch(e)
+    {
+        console.log(e);
+    }
+
+
+    var fd = new FormData();
+    fd.append("access_token",authToken);
+    fd.append("source", blob);
+    fd.append("message","#http://jaiminmoslake7020.github.io/fbapps/jobaka/");
+    try{
+        $.ajax({
+            url:"https://graph.facebook.com/me/photos?access_token=" + authToken,
+            type:"POST",
+            data:fd,
+            processData:false,
+            contentType:false,
+            cache:false,
+            success:function(data){
+                console.log("success " + data);
+
+                $('#successAlert p span').html("Successfully Posted to FB.");
+                $('#shareBox .modal-body').html($('#successAlert'));
+            },
+            error:function(shr,status,data){
+                console.log("error " + data + " Status " + shr.status);
+
+                $('#dangerAlert p span').html("error " + data + " Status " + shr.status);
+                $('#shareBox .modal-body').html($('#dangerAlert'));
+
+            },
+            complete:function(){
+                console.log("Posted to facebook");
+            }
+        });
+
+    }catch(e){console.log(e);}
+}
+
+function dataURItoBlob(dataURI) {
+    var byteString = atob(dataURI.split(',')[1]);
+    var ab = new ArrayBuffer(byteString.length);
+    var ia = new Uint8Array(ab);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    return new Blob([ab], { type: 'image/png' });
+}
 
 
 </script>
@@ -495,7 +345,7 @@
         } else {
             // The person is not logged into Facebook, so we're not sure if
             // they are logged into this app or not.
-            //  document.getElementById('status').innerHTML = 'Please log ' +
+          //  document.getElementById('status').innerHTML = 'Please log ' +
             //        'into Facebook.';
 
             $('#facebookLogin .modal-body').html($('#infoAlert'));
@@ -532,9 +382,9 @@
         //
         // These three cases are handled in the callback function.
 
-        //    FB.getLoginStatus(function(response) {
-        //      statusChangeCallback(response);
-        // });
+    //    FB.getLoginStatus(function(response) {
+      //      statusChangeCallback(response);
+       // });
 
     };
 
