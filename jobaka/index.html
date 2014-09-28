@@ -421,7 +421,7 @@
         var fd = new FormData();
         fd.append("access_token",authToken);
         fd.append("source", blob);
-        fd.append("message","#http://jaiminmoslake7020.github.io/fbapps/jobaka/");
+        fd.append("message",$('#saySomething').val());
         try{
             $.ajax({
                 url:"https://graph.facebook.com/me/photos?access_token=" + authToken,
