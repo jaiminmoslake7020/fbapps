@@ -35,12 +35,11 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="413" column="9" selection-start="19172" selection-end="19172" vertical-scroll-proportion="0.6559356" vertical-offset="6695" max-vertical-offset="8126">
+            <state line="492" column="28" selection-start="21921" selection-end="21921" vertical-scroll-proportion="0.6358149" vertical-offset="8048" max-vertical-offset="10064">
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -379,7 +378,6 @@
             <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -464,12 +462,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="9" selection-start="19172" selection-end="19172" vertical-scroll-proportion="0.6559356" vertical-offset="6695" max-vertical-offset="8126">
+        <state line="492" column="28" selection-start="21921" selection-end="21921" vertical-scroll-proportion="0.6358149" vertical-offset="8048" max-vertical-offset="10064">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#script#12;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
