@@ -616,3 +616,26 @@ function convertCanvasToImage() {
 
     return image;
 }
+
+
+
+$('.privacyPolicy').click(function(e){
+
+    e.preventDefault();
+
+    $.ajax({
+        url : "privacypolicy.html",
+        type : "GET",
+        dataType : "HTML",
+        success : function(response){
+
+            $('#privacyModal').find('.modal-body').html(response);
+            $('#privacyModal').modal('show');
+
+        },
+        error : function(){
+            alert("some thing wrong happende.");
+        }
+    });
+
+});
