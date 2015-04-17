@@ -124,6 +124,10 @@ $('#exampleInputEmail1').keyup(function(){
 // Converts canvas to an image
 function convertCanvasToImage() {
     var canvas = document.getElementById("myCanvas");
+    
+    
+    alert(canvas);
+    
     var image = new Image();
     image.src = canvas.toDataURL("image/png");
     var imageData  = canvas.toDataURL("image/png");
